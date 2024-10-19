@@ -1,0 +1,10 @@
+Header:
+  title: 職員ポータル
+  nav:
+    home: Home
+    chat: チャット
+    schedule: スケジュール
+    attendance: 勤怠報告
+    share: 共有
+    config: 設定
+

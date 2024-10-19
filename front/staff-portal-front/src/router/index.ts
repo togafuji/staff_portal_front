@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import Login from '../components/Login.vue';
-import Announcements from '../components/Announcements.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '@/views/HomeView.vue';
+import Login from '@/views/Login.vue';
+import Announcements from '@/views/Announcements.vue';
 
 // ルーターの設定
 const router = createRouter({
@@ -9,6 +9,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'Home',
+      component: HomeView
+    },
+    {
+      path: '/login',
       name: 'Login',
       component: Login
     },

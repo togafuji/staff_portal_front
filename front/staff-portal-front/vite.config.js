@@ -4,7 +4,6 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import yaml from '@rollup/plugin-yaml'
 import path from 'path'
-import postcss from './postcss.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,7 +12,8 @@ export default defineConfig({
   },
   plugins: [vue(), yaml(), vueJsx(), VueDevTools()],
   css: {
-    postcss},
+    postcss: './postcss.config.js'
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
