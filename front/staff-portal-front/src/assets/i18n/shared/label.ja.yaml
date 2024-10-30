@@ -8,3 +8,13 @@ Header:
     share: 共有
     config: 設定
 
+Home:
+  title: お知らせ
+
+Login:
+  title: ログイン
+  user: ユーザー名
+  email: Eメール
+  password: パスワード
+  button: ログイン
+  out: ログアウト

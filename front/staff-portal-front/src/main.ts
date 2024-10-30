@@ -5,10 +5,18 @@ import App from './App.vue'
 import router from './router'
 import i18n from './shared/i18n.util' // `i18n` をインポート
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHome, faComments, faCalendar, faUserCheck, faShareAlt, faCog } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faComments,
+  faCalendar,
+  faUserCheck,
+  faShareAlt,
+  faCog,
+  faLock
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faHome, faComments, faCalendar, faUserCheck, faShareAlt, faCog)
+library.add(faHome, faComments, faCalendar, faUserCheck, faShareAlt, faCog, faLock)
 
 // Vue 3のアプリケーションインスタンスを作成
 const app = createApp(App)
