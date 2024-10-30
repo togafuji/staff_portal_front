@@ -1,0 +1,20 @@
+Header:
+  title: 職員ポータル
+  nav:
+    home: Home
+    chat: チャット
+    schedule: スケジュール
+    attendance: 勤怠報告
+    share: 共有
+    config: 設定
+
+Home:
+  title: お知らせ
+
+Login:
+  title: ログイン
+  user: ユーザー名
+  email: Eメール
+  password: パスワード
+  button: ログイン
+  out: ログアウト

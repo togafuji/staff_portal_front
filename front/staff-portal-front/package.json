@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build:css": "npx tailwindcss -i ./src/assets/main.css -o ./dist/output.css --minify",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
@@ -14,15 +15,26 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.6.8",
     "pinia": "^2.1.7",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
     "vue": "^3.4.21",
+    "vue-i18n": "^10.0.4",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@rollup/plugin-yaml": "^4.1.2",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
+    "@types/jest": "^29.5.12",
     "@types/jsdom": "^21.1.6",
     "@types/node": "^20.12.5",
+    "@types/yaml": "^1.9.7",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/eslint-config-prettier": "^9.0.0",
@@ -38,6 +50,8 @@
     "vite": "^5.2.8",
     "vite-plugin-vue-devtools": "^7.0.25",
     "vitest": "^1.4.0",
-    "vue-tsc": "^2.0.11"
+    "vue-tsc": "^2.0.11",
+    "yaml": "^2.5.1",
+    "yaml-loader": "^0.8.1"
   }
 }
